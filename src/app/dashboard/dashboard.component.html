@@ -1,0 +1,28 @@
+<div>
+    <mat-card style="background-color: rgb(219, 207, 209); height: 68px;">
+        <div style=
+            "display: flex; 
+            justify-content: space-around;
+            padding: 0.5%;">
+            <div style="margin-top: 10px;">
+                <h1 style="font-weight: bolder; color: blue; font-size: 30px;">Welcome to portal</h1>
+            </div>
+            <div>
+                <mat-form-field appearance="outline" style="width: 40rem;">
+                    <mat-label>Search</mat-label>
+                    <input matInput placeholder="Enter the role">
+                    
+                </mat-form-field>
+            </div>
+            <div style="display: flex; gap: 10px; margin-top: 12px;">
+                <button style="height: 30px; border-radius: 10px;" routerLink="student">Student</button>
+                <button style="height: 30px; border-radius: 10px;" routerLink="teacher">Teacher</button>
+            </div>
+        </div>
+        
+    </mat-card>
+</div>
+<div style="margin-top: 40px;">
+    <router-outlet></router-outlet>
+    <!-- <app-teacher></app-teacher> -->
+</div>

@@ -1,8 +1,7 @@
 <div>
-
     <form class="register-container" [formGroup]="registerForm" (ngSubmit)="handleSubmit()">
         <div class="register-container-main">
-            <h2>Write Your Detail</h2>
+            <h2 style="margin-left: 11rem; font-size: 31px;">Write Your Detail</h2>
             <div class="register-container-main-name">
                 <mat-form-field appearance="outline" class="register-container-main-name1">
                     <mat-label>First Name</mat-label>
@@ -58,7 +57,7 @@
             </div>
             <div class="register-container-main-button">
                 <button mat-flat-button color="primary" type="submit"
-                    style="width: 96px; border-radius: 10px; cursor: pointer;">Register</button>
+                    style="width: 96px; border-radius: 10px; cursor: pointer;" routerLink="dashboard">Register</button>
             </div>
         </div>
     </form>

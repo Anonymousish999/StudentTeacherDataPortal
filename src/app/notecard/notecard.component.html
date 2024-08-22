@@ -1,0 +1,35 @@
+<div>
+    <mat-card style="
+        width: 22rem; 
+        padding-left: 63px;
+        border-radius: 60px;
+        border: 1px solid black;
+        box-shadow: 10px 10px 10px rgb(175, 173, 173);
+        background-color: whitesmoke;
+        color: black;">
+        <h3>First Name : <span>{{userData.firstName}}</span></h3>
+        <h3>Last Name : <span>{{userData.lastName}}</span></h3>
+        <h3>Email : <span>{{userData.Email}}</span></h3>
+        <h3>Role : <span>{{userData.role}}</span></h3>
+        <h3>City : <span>{{userData.city}}</span></h3>
+        <h3>State : <span>{{userData.state}}</span></h3>
+        <h3>Code : <span>{{userData.code}}</span></h3>
+        <div>
+            <button (click)="delete()" style="width: 71px;
+            height: 30px;
+            border-radius: 10px;
+            background-color: #fb063a;"
+            >delete</button>
+        </div>
+    </mat-card>
+</div>
+
+
+
+<!-- "firstName": "nd sn",
+      "lastName": "n scn",
+      "Email": "qwerty123@samp.com",
+      "role": "Student",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "code": "56004" -->

@@ -1,7 +1,7 @@
 {
   "student": [
     {
-      "id": 1724319206568,
+      "id": "1724319206569",
       "firstName": "nd sn",
       "lastName": "n scn",
       "Email": "qwerty123@samp.com",
@@ -11,16 +11,5 @@
       "code": "56004"
     }
   ],
-  "teacher": [
-    {
-      "id": 1724319118505,
-      "firstName": "nd sn",
-      "lastName": "n scn",
-      "Email": "qwerty123@samp.com",
-      "role": "Teacher",
-      "city": "Bengaluru",
-      "state": "Karnataka",
-      "code": "56004"
-    }
-  ]
+  "teacher": []
 }

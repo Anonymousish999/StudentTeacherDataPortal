@@ -11,17 +11,27 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
 import { HttpClientModule } from '@angular/common/http';
+import { MatCardModule } from '@angular/material/card';
+
 import {
   FormsModule,
   ReactiveFormsModule,
   FormControlName,
 } from '@angular/forms';
+import { NotecardComponent } from './notecard/notecard.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { StudentComponent } from './student/student.component';
+import { TeacherComponent } from './teacher/teacher.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     RegisterComponent,
+    NotecardComponent,
+    DashboardComponent,
+    StudentComponent,
+    TeacherComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,6 +44,7 @@ import {
     ReactiveFormsModule,
     MatRadioModule,
     HttpClientModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

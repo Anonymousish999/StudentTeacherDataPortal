@@ -1,0 +1,5 @@
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+    <div *ngFor="let teacher of teacherData">
+        <app-notecard [userData]="teacher"></app-notecard>
+    </div>
+</div>
