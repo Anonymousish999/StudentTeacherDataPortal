@@ -1,6 +1,6 @@
 <div>
 
-    <form class="register-container" [formGroup]="registerForm">
+    <form class="register-container" [formGroup]="registerForm" (ngSubmit)="handleSubmit()">
         <div class="register-container-main">
             <h2>Write Your Detail</h2>
             <div class="register-container-main-name">
@@ -33,31 +33,31 @@
                 justify-content: space-between;
                 gap: 31px;">
                     <mat-radio-button value="Teacher">Teacher</mat-radio-button>
-                    <mat-radio-button value="Teacher">Student</mat-radio-button>
+                    <mat-radio-button value="Student">Student</mat-radio-button>
                 </mat-radio-group>
             </div>
             <div>
                 <table class="example-full-width" cellspacing="0">
                     <tr style="display: flex;
-    gap: 20px;">
+                        gap: 20px;">
                         <td><mat-form-field class="example-full-width">
                                 <mat-label>City</mat-label>
-                                <input matInput placeholder="Ex. San Francisco">
+                                <input matInput placeholder="Ex. San Francisco" formControlName="city">
                             </mat-form-field></td>
                         <td><mat-form-field class="example-full-width">
                                 <mat-label>State</mat-label>
-                                <input matInput placeholder="Ex. California">
+                                <input matInput placeholder="Ex. California" formControlName="state">
                             </mat-form-field></td>
                         <td><mat-form-field class="example-full-width">
                                 <mat-label>Postal Code</mat-label>
-                                <input matInput #postalCode maxlength="5" placeholder="Ex. 12345" value="">
+                                <input matInput #postalCode maxlength="5" placeholder="Ex. 12345" value="" formControlName="code">
                                 <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
                             </mat-form-field></td>
                     </tr>
                 </table>
             </div>
             <div class="register-container-main-button">
-                <button mat-flat-button color="primary"
+                <button mat-flat-button color="primary" type="submit"
                     style="width: 96px; border-radius: 10px; cursor: pointer;">Register</button>
             </div>
         </div>
