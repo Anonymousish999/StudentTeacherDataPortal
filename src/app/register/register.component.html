@@ -1,0 +1,65 @@
+<div>
+
+    <form class="register-container" [formGroup]="registerForm">
+        <div class="register-container-main">
+            <h2>Write Your Detail</h2>
+            <div class="register-container-main-name">
+                <mat-form-field appearance="outline" class="register-container-main-name1">
+                    <mat-label>First Name</mat-label>
+                    <input matInput placeholder="First Name*" formControlName="firstName" />
+                </mat-form-field>
+                <mat-form-field appearance="outline" class="register-container-main-name1">
+                    <mat-label>Last Name</mat-label>
+                    <input matInput placeholder="Last Name*" formControlName="lastName" />
+                </mat-form-field>
+            </div>
+            <div class="register-container-main-email" style="margin-bottom: 16px;">
+                <mat-form-field appearance="outline" style="width: 100%">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="Email*" formControlName="Email" />
+                    <mat-hint>you can use letters,numbers and periods</mat-hint>
+                </mat-form-field>
+            </div>
+
+
+            <div class="register-radio" style="width: 44px; 
+            height: 42px; 
+            margin-bottom: 30px; 
+            display: flex;
+            gap: 73px;">
+                <mat-label style="font-size: large; font-weight: 500;">Role</mat-label>
+                <mat-radio-group aria-label="Select an option" formControlName="role" style="
+                display: flex;
+                justify-content: space-between;
+                gap: 31px;">
+                    <mat-radio-button value="Teacher">Teacher</mat-radio-button>
+                    <mat-radio-button value="Teacher">Student</mat-radio-button>
+                </mat-radio-group>
+            </div>
+            <div>
+                <table class="example-full-width" cellspacing="0">
+                    <tr style="display: flex;
+    gap: 20px;">
+                        <td><mat-form-field class="example-full-width">
+                                <mat-label>City</mat-label>
+                                <input matInput placeholder="Ex. San Francisco">
+                            </mat-form-field></td>
+                        <td><mat-form-field class="example-full-width">
+                                <mat-label>State</mat-label>
+                                <input matInput placeholder="Ex. California">
+                            </mat-form-field></td>
+                        <td><mat-form-field class="example-full-width">
+                                <mat-label>Postal Code</mat-label>
+                                <input matInput #postalCode maxlength="5" placeholder="Ex. 12345" value="">
+                                <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+                            </mat-form-field></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="register-container-main-button">
+                <button mat-flat-button color="primary"
+                    style="width: 96px; border-radius: 10px; cursor: pointer;">Register</button>
+            </div>
+        </div>
+    </form>
+</div>
