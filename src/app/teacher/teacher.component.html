@@ -1,5 +1,5 @@
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-    <div *ngFor="let teacher of teacherData">
+    <div *ngFor="let teacher of teacherData | search:searchText">
         <app-notecard [userData]="teacher"></app-notecard>
     </div>
 </div>

@@ -47,6 +47,6 @@ export class RegisterComponent implements OnInit {
         console.log(data);
       });
     }
-    
+    alert('Data Submitted Successfully');
   }
 }

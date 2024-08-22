@@ -1,6 +1,6 @@
 
 <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-    <div *ngFor="let student of studentData">
+    <div *ngFor="let student of studentData | search:searchText">
         <app-notecard [userData]="student"></app-notecard>
     </div>
 </div>

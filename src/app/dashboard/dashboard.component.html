@@ -10,7 +10,7 @@
             <div>
                 <mat-form-field appearance="outline" style="width: 40rem;">
                     <mat-label>Search</mat-label>
-                    <input matInput placeholder="Enter the role">
+                    <input matInput placeholder="Enter the role" [(ngModel)] = "searchText" (ngModelChange)="onSearch()">
                     
                 </mat-form-field>
             </div>

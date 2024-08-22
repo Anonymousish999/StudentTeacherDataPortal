@@ -9,7 +9,58 @@
       "city": "Bengaluru",
       "state": "Karnataka",
       "code": "56004"
+    },
+    {
+      "id": "1724319206563",
+      "firstName": "nd sn",
+      "lastName": "n scn",
+      "Email": "qwerty123@samp.com",
+      "role": "Student",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "code": "56004"
+    },
+    {
+      "id": "172431920657",
+      "firstName": "nd sn",
+      "lastName": "n scn",
+      "Email": "qwerty123@samp.com",
+      "role": "Student",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "code": "56004"
+    },
+    {
+      "id": 1724330335384,
+      "firstName": "ishu",
+      "lastName": "Gupta",
+      "Email": "guptarshu999@gmail.com",
+      "role": "Student",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "code": "56004"
     }
   ],
-  "teacher": []
+  "teacher": [
+    {
+      "id": 1724330266421,
+      "firstName": "qkds",
+      "lastName": "ncd ",
+      "Email": "jdnkjankjda",
+      "role": "Teacher",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "code": "56004"
+    },
+    {
+      "id": 1724330519316,
+      "firstName": "ishu",
+      "lastName": "Gupta",
+      "Email": "guptarshu999@gmail.com",
+      "role": "Teacher",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "code": "56004"
+    }
+  ]
 }

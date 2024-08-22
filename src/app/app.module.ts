@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {RegisterComponent} from './register/register.component';
-import { HeaderComponent } from './header/header.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
@@ -22,16 +21,17 @@ import { NotecardComponent } from './notecard/notecard.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { StudentComponent } from './student/student.component';
 import { TeacherComponent } from './teacher/teacher.component';
+import { SearchPipe } from './pipes/search.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     RegisterComponent,
     NotecardComponent,
     DashboardComponent,
     StudentComponent,
     TeacherComponent,
+    SearchPipe,
   ],
   imports: [
     BrowserModule,

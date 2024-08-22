@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { HttpService } from '../service/http/http.service';
+import { DataService } from '../service/data/data.service';
 
 @Component({
   selector: 'app-teacher',
@@ -7,9 +8,9 @@ import { HttpService } from '../service/http/http.service';
   styleUrls: ['./teacher.component.scss'],
 })
 export class TeacherComponent implements OnInit {
-
+  @Input() searchText: string = '';
   teacherData: any;
-  constructor(private httpService:HttpService) {}
+  constructor(private httpService: HttpService, private dataService:DataService) {}
 
   ngOnInit(): void {
     this.httpService.getTeachers().subscribe({
@@ -19,6 +20,10 @@ export class TeacherComponent implements OnInit {
       error: (error) => {
         console.error('There was an error!', error);
       },
+    });
+
+    this.dataService.currentData.subscribe((data) => {
+      this.searchText = data;
     });
   }
 }
