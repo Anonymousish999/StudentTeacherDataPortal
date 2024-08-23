@@ -27,7 +27,6 @@ export class RegisterComponent implements OnInit {
 
   handleSubmit() {
     const obj = {
-      id: Date.now(),
       firstName: this.registerForm.value.firstName,
       lastName: this.registerForm.value.lastName,
       Email: this.registerForm.value.Email,
@@ -42,11 +41,11 @@ export class RegisterComponent implements OnInit {
         console.log(data);
       });
     }
-    else{
+    if(this.registerForm.value.role === 'Teacher'){
       this.httpService.addTeacher(obj).subscribe((data)=>{
         console.log(data);
       });
     }
-    alert('Data Submitted Successfully');
+    // alert('Data Submitted Successfully');
   }
 }

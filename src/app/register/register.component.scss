@@ -36,12 +36,6 @@ body {
     gap: 60px;
 }
 
-// .register-container-main-password {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-// }
-
 .register-container-main-button {
     display: flex;
     flex-direction: row;
@@ -49,75 +43,90 @@ body {
     height: 38px;
 }
 
-// .register-container-picture {
-//     width: 40%;
-//     margin-left: 5%;
-//     text-align: center;
-// }
-
-// .register-container-main-sign-in-instead {
-//     background: none;
-//     color: rgba(61, 61, 210, 0.82);
-//     border: none;
-// }
-
-
 #language-select {
     background: none;
     border: none;
     color: rgb(78, 64, 64);
 }
 
-// .login-normal-button2 {
-//     background: none;
-//     color: rgb(29, 29, 33);
-//     border: none;
-// }
+.register-radio {
+    width: 44px;
+    height: 42px;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 73px;
 
-// .register-container-main-password11,
-// .register-container-main-password12 {
-//     width: 47%;
-// }
+}
 
-// .register-container-main-name1 {
-//     width: 47%;
-// }
+.radio_btn {
 
-@media(min-width:350px) and (max-width:950px) {
+    display: flex;
+    justify-content: space-between;
+    gap: 31px;
+
+}
+
+.title {
+    margin-left: 8rem;
+    font-size: 31px;
+}
+
+
+
+@media(min-width:430px) and (max-width:950px) {
 
     .register-container {
         justify-content: center;
     }
 
+    .register-container {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-left: 10%;
+    }
+
     .register-container-main-name {
         display: flex;
         flex-direction: column;
-    }
-
-    .register-container-main-name1 {
-        width: 100%;
-    }
-
-    .register-container-picture {
-        display: none;
+        width: 50%;
+        margin-left: 10%;
     }
 
     .register-container-main-email {
-        width: 100%;
+        padding-bottom: 4%;
+        width: 72%;
+        margin-left: 10%;
     }
 
-    
+    .register-radio {
+        margin-left: 12%;
+    }
+
+    .title {
+        margin-left: 5rem;
+        font-size: 31px;
+    }
+
+    .example-full-width {
+        width: 54%;
+        margin-left: 8%;
+    }
+
+    td {
+        width: 50%;
+    }
 
     .register-container-main-email {
         padding-bottom: 4%;
     }
 
-}
+    .register-container-main-button {
+        margin-left: 10%;
+    }
 
-@media(min-width:951px) and (max-width:1100px) {
-
-    .register-container-picture {
-        display: none;
+    .radio_btn {
+        display: block;
     }
 
 }

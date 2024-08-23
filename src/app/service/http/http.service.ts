@@ -26,11 +26,11 @@ export class HttpService {
     return this.http.post(`${this.apiUrl}/teacher`, teacher);
   }
 
-  deleteStudent(id: number) {
+  deleteStudent(id: string) {
     return this.http.delete(`${this.apiUrl}/student/${id}`);
   }
 
-  deleteTeacher(id: number) {
+  deleteTeacher(id: string) {
     return this.http.delete(`${this.apiUrl}/teacher/${id}`);
   }
 }

@@ -1,0 +1,8 @@
+@media(min-width:430px) and (max-width:950px) {
+
+    .dashboard-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}

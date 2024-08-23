@@ -1,9 +1,9 @@
 {
   "student": [
     {
-      "id": "1724319206569",
-      "firstName": "nd sn",
-      "lastName": "n scn",
+      "id": "63a0",
+      "firstName": "n fdn",
+      "lastName": "n ds",
       "Email": "qwerty123@samp.com",
       "role": "Student",
       "city": "Bengaluru",
@@ -11,27 +11,7 @@
       "code": "56004"
     },
     {
-      "id": "1724319206563",
-      "firstName": "nd sn",
-      "lastName": "n scn",
-      "Email": "qwerty123@samp.com",
-      "role": "Student",
-      "city": "Bengaluru",
-      "state": "Karnataka",
-      "code": "56004"
-    },
-    {
-      "id": "172431920657",
-      "firstName": "nd sn",
-      "lastName": "n scn",
-      "Email": "qwerty123@samp.com",
-      "role": "Student",
-      "city": "Bengaluru",
-      "state": "Karnataka",
-      "code": "56004"
-    },
-    {
-      "id": 1724330335384,
+      "id": "f9d2",
       "firstName": "ishu",
       "lastName": "Gupta",
       "Email": "guptarshu999@gmail.com",
@@ -43,17 +23,27 @@
   ],
   "teacher": [
     {
-      "id": 1724330266421,
-      "firstName": "qkds",
-      "lastName": "ncd ",
-      "Email": "jdnkjankjda",
+      "id": "556a",
+      "firstName": "n fdn",
+      "lastName": "n ds",
+      "Email": "qwerty123@samp.com",
       "role": "Teacher",
       "city": "Bengaluru",
       "state": "Karnataka",
       "code": "56004"
     },
     {
-      "id": 1724330519316,
+      "id": "8508",
+      "firstName": "n fdn",
+      "lastName": "n ds",
+      "Email": "qwerty123@samp.com",
+      "role": "Teacher",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "code": "56004"
+    },
+    {
+      "id": "d339",
       "firstName": "ishu",
       "lastName": "Gupta",
       "Email": "guptarshu999@gmail.com",

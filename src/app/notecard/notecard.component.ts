@@ -29,10 +29,11 @@ export class NotecardComponent implements OnInit {
         }
       });
     }
-    else {
+    if(role === 'Teacher') {
       this.http.deleteTeacher(id).subscribe({
         next: (data) => {
           console.log(data);
+          window.location.reload();
         },
         error: (error) => {
           console.error('There was an error!', error);
